@@ -1,0 +1,136 @@
+  /* body{
+    background-color: #f1f1f1;
+  } */
+    
+    * {
+        font-family: "proxima-nova," sans-serif;
+    }
+    .mcon{
+        width: 81.45%;
+        margin-left: 17.5rem;
+        background-color: #f1f1f1;
+        height: 26.2rem;
+    }
+    .list1 {
+        display: flex;
+        gap: 50px;
+        padding: 15px;
+        height: 20rem;
+        
+        
+    }
+    .list0 {
+        width: 79.5%;
+        display: flex;
+        gap: 50px;
+        padding: 15px;
+        background-color: #f1f1f1;
+        margin-left: 17.5rem;
+        margin-top: -37.5rem;
+        padding-top: 1.5rem;
+        
+    }
+   
+    .songcard {
+        width: 195px;
+        height: 15rem;
+        background-color: white;
+        border-radius: 5px;
+        padding-bottom: 20px;
+        margin-left: 2px;
+        box-shadow: rgb(87, 88, 88) 10px 10px 15px;
+    }
+    .songcard1{
+        width: 195px;
+        height: 15rem;
+        background-color: white;
+        border-radius: 5px;
+        padding-bottom: 20px;
+        margin-left: 1.5rem;
+        box-shadow: rgb(87, 88, 88) 10px 10px 15px;
+    }
+    .songcard0{
+        width: 97%;
+        float: right;
+        height: 15rem;
+        background-color: white;
+        border-radius: 5px;
+        padding-bottom: 20px;
+        margin-left: 1.5rem;
+        box-shadow: rgb(87, 88, 88) 10px 10px 15px;
+    }
+    .border0 {
+        float: left;
+        padding-top: 15px;
+        padding-right: 3rem;
+        margin-left: 1rem;
+        
+       
+    }
+    .border1 {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        
+    }
+    
+    .line {
+        border-top: 0.1px solid #D3D3D3;
+        width: 270px;
+        margin-left: 15px;
+    }
+    
+    .heading{
+        text-align: left;
+        margin-left: 10px;
+        font-size: large;
+    }
+    .headingp{
+        text-align: left;
+        font-size: 1rem;
+        margin-top: 35px;
+       
+    }
+    .headingpx{
+        text-align: left;
+        font-size: 1.3rem;
+        margin-top: -3rem;
+    }
+    .para {
+        text-align: left;
+        margin-left: 10px;
+    }
+    .para0 {
+        text-align: left;
+        font-size: 3.5rem;
+        margin-top: -0.5rem;
+        color: black;
+        font-weight: bold;
+    }
+    .play1{
+        transform: translateY(-160px);
+        background: transparent;
+        border: none;
+    }
+    .pla{
+        transform: translateY(-140px);
+        background: transparent;
+        border: none;
+    }
+    
+    .bar{
+        margin-top: -45rem;
+    }
+    .pl{
+        background-color:#11819d;
+        border: none;
+        color: white;
+        width: 6rem;
+        height: 2.5rem;
+        font-size: 1.5rem ;
+        text-align: center;
+        border-radius: 25px;
+        margin-right: 47rem;
+    }
+    /* .pl:hover{
+        box-shadow: rgb(87, 88, 88) 10px 10px 15px;
+    } */

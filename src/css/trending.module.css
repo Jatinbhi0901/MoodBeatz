@@ -1,0 +1,61 @@
+.mainplay{
+    /* background-color: #f1f1f1; */
+    margin-top: -40rem;
+    width: 81.8%;
+    height: 47.4rem;
+    float: right;
+}
+.playingnow{
+    font-size: 1.5rem;
+}
+.mainimg{
+    width: 400px;
+    height: 350px;
+    margin-top: 6rem;
+}
+.detailstitle{
+    font-size: 1.5rem;
+}
+.detailsartist{
+    font-size: 1.5rem;
+    margin-top: -1rem;
+}
+.mbtn{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    color: rgb(22, 22, 22);
+    /* background-color: #11819d; */
+    background: transparent;
+}
+.mbtn2{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    color: rgb(1, 1, 1);
+    /* background-color: #11819d; */
+    margin-left: 5px;
+    border-radius: 20px;
+}
+.mbtn3{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    color: rgb(8, 8, 8);
+    /* background-color: #11819d; */
+    background: transparent;
+    margin-left: 5px;
+}
+audio::-webkit-media-controls-play-button{
+    display: none;
+}
+.media{
+    width: 800px;
+    margin-top: 1.5rem;
+}
+.nextup{
+    font-weight: bold;
+}
+.ne{
+    font-weight: lighter;
+}

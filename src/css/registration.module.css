@@ -1,0 +1,190 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bdy {
+    height: 49rem;
+    padding-top:0.5rem ;
+    background: linear-gradient(
+      to bottom left, 
+      #11819d  0%, 
+      #ffffff 50%, 
+     
+      #11819d 100%
+      
+    );
+  }
+.container1{
+    width: 60%;
+    margin: auto; 
+    height: 15cm;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #338295;
+    
+
+}
+.container2{
+    width: 60%;
+    margin: auto; 
+    height: 1.4cm;
+    margin-top: 3%;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  background-color: #11819d;
+
+}
+.Box2{
+    margin-right: 8%;
+    margin-left: 8%;
+    padding-top: 8%;
+    background-color: white;
+    height: 460px;
+    padding-top: 5%;
+    border-radius: 15px;
+    
+    
+    
+}
+
+.fn{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 7px;
+    border-color: #11819d;
+}
+
+.ln{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 7px;
+    border-color: #11819d;
+}
+
+.cn{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 7px;
+    border-color: #11819d;
+}
+
+.co{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 5px;
+    border-color: #11819d;
+}
+
+.LoginId{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: -25px;
+    border-color: #11819d;
+
+}
+.password{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 8px;
+    border-color: #11819d;
+
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin-top: 1.5%;
+   background-color: #11819d;
+    font-size: 0.5cm;
+    color: white;
+    border-radius: 7px;
+    border-color: #11819d;
+
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7cm;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.abc{
+    padding-bottom: 1cm;
+    padding-top: 1cm;
+    float: left;
+    padding-left:0.8cm;
+   
+}
+.line1{
+    font-size: 0.5cm;
+    padding-right: 1.1cm;
+}
+
+.line2{
+    padding-left: 1cm;
+    font-size: 0.5cm;
+    padding-right: 1cm;
+}
+
+
+
+
+
+
+.qwe{
+    padding-bottom: 1cm;
+    float: left;
+    padding-left:0.8cm;
+
+   
+}
+.line3{
+    font-size: 0.5cm;
+    padding-right: 1cm;
+}
+.line4{
+    padding-left:1cm;
+    font-size: 0.5cm;
+    padding-right: 1.5cm;
+}
+
+
+
+
+.asd{
+    padding-bottom: 1cm;
+    float: left;
+    padding-left:0.8cm;
+}
+.line5{
+    font-size: 0.5cm;
+    padding-right: 2.3cm;
+}
+.line6{
+    padding-left: 1cm;
+    font-size: 0.5cm;
+    padding-right: 1cm;
+}
+
+
+
+
