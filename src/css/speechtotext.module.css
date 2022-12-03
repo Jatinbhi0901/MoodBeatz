@@ -2,13 +2,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .sec2{
-    margin-top: -35rem;
+    margin-top: -33rem;
     margin-left: 20rem;
 }
 .loader{
     width: 40%;
     margin: auto;
-    /* background-color: aqua; */
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;

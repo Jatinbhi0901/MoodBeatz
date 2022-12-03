@@ -32,6 +32,7 @@ const SpeechToText = () => {
     <Left/>
       
       <section className={style.sec2}>
+        <h1>Speak : play 'music name/album name'</h1>
         <div className={style.loader}>
           <div className={style.line1}></div>
           <div className={style.line2}></div>

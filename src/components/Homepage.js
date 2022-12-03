@@ -3,6 +3,10 @@ import Left from "./Left";
 import style from "../css/homepage.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 
 import q0 from "../images/items/trending.jpg";
 import q2 from "../images/items/hothindi.jfif";
@@ -82,8 +86,11 @@ function Homepage() {
   return (
     <>
       <Left />
+      
       <section className={style.list0}>
+      
         <div className={style.songcard0}>
+          
           <img
             src={q0}
             className={style.border0}
@@ -120,13 +127,12 @@ function Homepage() {
             />
             <h2 className={style.heading}>Top 50 global</h2>
             <p className={style.para}>
-              Your daily update of most played tracks right now.
+              Your daily update of most played tracks right now
             </p>
             {isHovering && (
               <div>
                 <button onClick={ok2} className={style.play1}>
-                  {/* <img src={play} width="50px" /> */}
-                  <img src="https://img.icons8.com/flat-round/64/000000/play--v1.png" />
+                  <FontAwesomeIcon icon={faPlay} />
                 </button>
               </div>
             )}
@@ -146,12 +152,13 @@ function Homepage() {
             />
             <h2 className={style.heading}>Hot Hits Hindi</h2>
             <p className={style.para}>
-              Best Bollywood love songs from last 10 years.
+              Best Bollywood love songs from last 10 years
             </p>
             {isHovering2 && (
               <div>
                 <button onClick={ok3} className={style.play1}>
-                  <img src="https://img.icons8.com/flat-round/64/000000/play--v1.png" />
+                <FontAwesomeIcon icon={faPlay} />
+                  
                 </button>
               </div>
             )}
@@ -176,7 +183,7 @@ function Homepage() {
             {isHovering3 && (
               <div>
                 <button onClick={ok4} className={style.play1}>
-                  <img src="https://img.icons8.com/flat-round/64/000000/play--v1.png" />
+                <FontAwesomeIcon icon={faPlay} />
                 </button>
               </div>
             )}
@@ -195,11 +202,11 @@ function Homepage() {
               height="140px"
             />
             <h2 className={style.heading}>Rap 91</h2>
-            <p className={style.para}>Best Hip-Hop from India.</p>
+            <p className={style.para}>Best Hip-Hop from India-An exclusive playlist </p>
             {isHovering4 && (
               <div>
                 <button onClick={ok5} className={style.pla}>
-                  <img src="https://img.icons8.com/flat-round/64/000000/play--v1.png" />
+                <FontAwesomeIcon icon={faPlay} />
                 </button>
               </div>
             )}
@@ -218,11 +225,11 @@ function Homepage() {
               height="140px"
             />
             <h2 className={style.heading}>Imran Hashmi</h2>
-            <p className={style.para}>Best Hip-Hop from India.</p>
+            <p className={style.para}>Featuring Imran Hashmi, Pritam, KK & many more</p>
             {isHovering5 && (
               <div>
                 <button onClick={ok6} className={style.pla}>
-                  <img src="https://img.icons8.com/flat-round/64/000000/play--v1.png" />
+                <FontAwesomeIcon icon={faPlay} />
                 </button>
               </div>
             )}

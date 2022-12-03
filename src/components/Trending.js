@@ -7,7 +7,7 @@ function Trending() {
   const [songs] = useState([
     {
       title: "Kesariya",
-      artist: "Prtitam, Arijit Singh, Amitabh Bhattacharya",
+      artist: "Pritam, Arijit Singh, Amitabh Bhattacharya",
       img_src: "./images/kesariya.jfif",
       src: "./music/Kesariya(PagalWorld.com.se).mp3",
     },
