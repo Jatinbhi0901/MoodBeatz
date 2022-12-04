@@ -3,31 +3,31 @@ import Player from "../components/Player";
 import React from "react";
 import style from "../css/trending.module.css";
 
-function HotHindi() {
+function Punjabi() {
   const [songs] = useState([
     {
-        title: "Chand Baliyan",
-        artist: "Aditya A",
-        img_src: "./images/chandbaliyan.jfif",
-        src: "./music/Chaand Baaliyan - Aditya A.mp3",
+        title: "Pasoori",
+        artist: "Shae Gill, Ali Sethi, Coke Studio 14",
+        img_src: "./images/pasoori.jfif",
+        src: "./music/Pasoori - Shae Gill.mp3",
       },
       {
-        title: "Deva Deva",
-        artist: "Arijit Singh, Amitabh Bhattacharya, Jonita Gandhi, Pritam",
-        img_src: "./images/devadeva.jfif",
-        src: "./music/Deva Deva - Brahmastra.mp3",
+        title: "3 Peg",
+        artist: "Sharry Maan",
+        img_src: "./images/3peg.jfif",
+        src: "./music/Sharry Maan - 3 Peg - 190Kbps.mp3",
       },
       {
-        title: "Dance Meri Rani",
-        artist: "Guru Randhawa, Zahrah S Khan, Tanishk Bagchi, Nora Fatehi",
-        img_src: "./images/dancemerirani.jfif",
-        src: "./music/Dance Meri Rani - Guru Randhawa.mp3",
+        title: "Backbone",
+        artist: "Harrdy Sandhu",
+        img_src: "./images/backbone.jfif",
+        src: "./music/Backbone - Harrdy Sandhu.mp3",
       },
       {
-        title: "Najaa",
-        artist: "Pav Dharia, Nikhita Gandhi, Tanishk Bagchi",
-        img_src: "./images/naja.jfif",
-        src: "./music/Najaa - Sooryavanshi.mp3",
+        title: "Koka",
+        artist: "Jasbir Jassi, Badshah, Dhvani Bhanushali, Tanishk Bagchi",
+        img_src: "./images/koka.jfif",
+        src: "./music/Koka - Khandaani Shafakhana.mp3",
       }
   ]);
 
@@ -56,4 +56,4 @@ function HotHindi() {
   );
 }
 
-export default HotHindi;
+export default Punjabi;

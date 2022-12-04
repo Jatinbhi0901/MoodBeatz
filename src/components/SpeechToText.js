@@ -10,7 +10,6 @@ const SpeechToText = () => {
   const commands = [
     {
       command: 'reset',
-     
       callback: ({ resetTranscript }) => resetTranscript()
     },
     {
@@ -19,12 +18,22 @@ const SpeechToText = () => {
         window.open("http://" + site)
       }
     },
-    {
-      command: 'play *',
-      callback: (musicPlayer) => {
-        window.open("http://localhost:3000/"+musicPlayer.split(" ").join(""),"_self")
-      }
-    }
+{
+  command: ['play *','punjabi', 'trending', 'hindi', 'rap'],
+      
+      callback: (command) => 
+        window.open('http://localhost:3000/'+command,"_self"),
+        isFuzzyMatch: true,
+      fuzzyMatchingThreshold: 0.2,
+      bestMatchOnly: true
+}
+
+    // {
+    //   command: 'play *',
+    //   callback: (musicPlayer) => {
+    //     window.open("http://localhost:3000/"+musicPlayer.split(" ").join(""),"_self")
+    //   }
+    // }
   ];
   const { transcript, listening, resetTranscript } = useSpeechRecognition({commands});
 

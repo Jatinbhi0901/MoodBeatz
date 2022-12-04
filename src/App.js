@@ -9,8 +9,8 @@ import Left from "./components/Left";
 import Homepage from "./components/Homepage";
 import Trending from "./components/Trending";
 import Global from "./components/Global";
-import HotHindi from "./components/HotHindi";
-import HotPunjabi from "./components/HotPunjabi";
+import Hindi from "./components/Hindi";
+import Punjabi from "./components/Punjabi";
 import Rap91 from "./components/Rap91";
 import Imran from "./components/Imran";
 
@@ -29,8 +29,8 @@ function App() {
           <Route path="/homepage" element={<Homepage />} />
           <Route path="/trending" element={<Trending />} />
           <Route path="/global" element={<Global />} />
-          <Route path="/hothindi" element={<HotHindi />} />
-          <Route path="/hotpunjabi" element={<HotPunjabi />} />
+          <Route path="/hindi" element={<Hindi />} />
+          <Route path="/punjabi" element={<Punjabi />} />
           <Route path="/rap91" element={<Rap91 />} />
           <Route path="/imran" element={<Imran />} />
           
