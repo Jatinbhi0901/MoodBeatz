@@ -69,10 +69,10 @@ function Homepage() {
     history("/global");
   }
   function ok3() {
-    history("/hothindi");
+    history("/hindi");
   }
   function ok4() {
-    history("/hotpunjabi");
+    history("/punjabi");
   }
   function ok5() {
     history("/rap91");

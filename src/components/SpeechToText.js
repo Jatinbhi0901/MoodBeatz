@@ -9,33 +9,28 @@ import Left from "./Left";
 const SpeechToText = () => {
   const commands = [
     {
-      command: 'reset',
-      callback: ({ resetTranscript }) => resetTranscript()
+      command: "reset",
+      callback: ({ resetTranscript }) => resetTranscript(),
     },
     {
-      command: 'open *',
+      command: "open *",
       callback: (site) => {
-        window.open("http://" + site)
-      }
+        window.open("http://" + site);
+      },
     },
-{
-  command: ['play *','punjabi', 'trending', 'hindi', 'rap'],
-      
-      callback: (command) => 
-        window.open('http://localhost:3000/'+command,"_self"),
-        isFuzzyMatch: true,
-      fuzzyMatchingThreshold: 0.2,
-      bestMatchOnly: true
-}
+    {
+      command: ["play *", "punjabi", "trending", "hindi", "rap"],
 
-    // {
-    //   command: 'play *',
-    //   callback: (musicPlayer) => {
-    //     window.open("http://localhost:3000/"+musicPlayer.split(" ").join(""),"_self")
-    //   }
-    // }
+      callback: (command) =>
+        window.open("http://localhost:3000/" + command, "_self"),
+      isFuzzyMatch: true,
+      fuzzyMatchingThreshold: 0.2,
+      bestMatchOnly: true,
+    },
   ];
-  const { transcript, listening, resetTranscript } = useSpeechRecognition({commands});
+  const { transcript, listening, resetTranscript } = useSpeechRecognition({
+    commands,
+  });
 
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
     return null;
@@ -43,8 +38,8 @@ const SpeechToText = () => {
 
   return (
     <>
-    <Left/>
-      
+      <Left />
+
       <section className={style.sec2}>
         <h1>Speak : play 'music name/album name'</h1>
         <div className={style.loader}>
