@@ -21,8 +21,24 @@ const SpeechToText = () => {
 {
   command: ['play *','punjabi', 'trending', 'hindi', 'rap'],
       
-      callback: (command) => 
-        window.open('http://localhost:3000/'+command,"_self"),
+      callback: (command) => {
+        if(JSON.stringify(command).includes('punjabi')){
+          window.open('http://localhost:3000/punjabi',"_self")
+        }
+        else if(JSON.stringify(command).includes('trending')){
+          window.open('http://localhost:3000/trending',"_self")
+        }
+        else if(JSON.stringify(command).includes('hindi')){
+          window.open('http://localhost:3000/hindi',"_self")
+        }
+        else if(JSON.stringify(command).includes('rap')){
+          window.open('http://localhost:3000/rap',"_self")
+        }
+        else{
+          alert("No track found")
+        }
+      }
+       ,
         isFuzzyMatch: true,
       fuzzyMatchingThreshold: 0.2,
       bestMatchOnly: true
@@ -31,6 +47,7 @@ const SpeechToText = () => {
     // {
     //   command: 'play *',
     //   callback: (musicPlayer) => {
+      // window.open('http://localhost:3000/'+command,"_self")
     //     window.open("http://localhost:3000/"+musicPlayer.split(" ").join(""),"_self")
     //   }
     // }
