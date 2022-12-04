@@ -13,15 +13,20 @@ const SpeechToText = () => {
      
       callback: ({ resetTranscript }) => resetTranscript()
     },
-,
     {
       command: 'open *',
       callback: (site) => {
         window.open("http://" + site)
-      },
+      }
     },
+    {
+      command: 'play *',
+      callback: (musicPlayer) => {
+        window.open("http://localhost:3000/"+musicPlayer.split(" ").join(""),"_self")
+      }
+    }
   ];
-  const { transcript, listening, resetTranscript } = useSpeechRecognition(commands);
+  const { transcript, listening, resetTranscript } = useSpeechRecognition({commands});
 
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
     return null;
