@@ -1,0 +1,26 @@
+.faceback{
+    width: 81.75%;
+    height: 42.4rem;
+    float: right;
+    padding-top: 3rem;
+    background-color: aqua;
+    margin-top: -38rem;
+}
+.off{
+    cursor: pointer;
+              background-Color: #11819d;
+              color: white;
+              padding: 15px;
+              font-size: 25px;
+              border: none;
+              border-Radius: 10px;
+}
+.on{
+    cursor: pointer;
+              background-Color: #11819d;
+              color: white;
+              padding: 15px;
+              font-size: 25px;
+              border: none;
+              border-Radius: 10px;
+}

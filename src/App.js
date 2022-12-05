@@ -14,6 +14,13 @@ import Punjabi from "./components/Punjabi";
 import Rap91 from "./components/Rap91";
 import EmraanHashmi from "./components/EmraanHashmi";
 import Face from "./components/Face";
+import Disgusted from "./Songs/Disgusted";
+import Happy from "./Songs/Happy";
+import Sad from "./Songs/Sad";
+import Angry from "./Songs/Angry";
+import Fearful from "./Songs/Fearful";
+import Neutral from "./Songs/Neutral";
+import Surprised from "./Songs/Surprised";
 
 
 function App() {
@@ -35,6 +42,14 @@ function App() {
           <Route path="/rap91" element={<Rap91 />} />
           <Route path="/emraanhashmi" element={<EmraanHashmi />} />
           <Route path="/facerec" element={<Face />} />
+
+          <Route path="/happy" element={<Happy />} />
+          <Route path="/sad" element={<Sad />} />
+          <Route path="/angry" element={<Angry />} />
+          <Route path="/neutral" element={<Neutral />} />
+          <Route path="/fearful" element={<Fearful />} />
+          <Route path="/surprised" element={<Surprised />} />
+          <Route path="/disgusted" element={<Disgusted />} />
           
         </Routes>
       </BrowserRouter>

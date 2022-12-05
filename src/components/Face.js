@@ -1,6 +1,9 @@
 import * as faceapi from "face-api.js";
 import { useNavigate } from "react-router-dom";
 import React from "react";
+import swal from "sweetalert";
+import Left from "./Left";
+import style from "../css/face.module.css"
 
 function App() {
   const history = useNavigate();
@@ -102,26 +105,61 @@ function App() {
         console.log(maxKey);
 
         if (maxKey === "happy") {
-          history("/hindi");
+          swal({
+            title: "Your Cureent Mood is Happy",
+            text: "Good job!",
+            icon: "success",
+            button: "Ok",
+          }).then(history("/happy"));
         }
         else if (maxKey === "surprised") {
-            history("/trending");
+          swal({
+            title: "Your Cureent Mood is surprised",
+            text: "Good job!",
+            icon: "success",
+            button: "Ok",
+          }).then(history("/surprised"));
         }
         else if (maxKey === "angry") {
-            history("/punjabi");
+          swal({
+            title: "Your Cureent Mood is angry",
+            text: "Good job!",
+            icon: "success",
+            button: "Ok",
+          }).then(history("/angry"));
           }
          
           else if (maxKey === "sad") {
-            history("/login");
+            swal({
+              title: "Your Cureent Mood is fearful",
+              text: "Good job!",
+              icon: "success",
+              button: "Ok",
+            }).then(history("/sad"));
           }
           else if (maxKey === "fearful") {
-            history("/rap91");
+            swal({
+              title: "Your Cureent Mood is fearful",
+              text: "Good job!",
+              icon: "success",
+              button: "Ok",
+            }).then(history("/fearful"));
           }
           else if (maxKey === "disgusted") {
-            history("/global");
+            swal({
+              title: "Your Cureent Mood is disgusted",
+              text: "Good job!",
+              icon: "success",
+              button: "Ok",
+            }).then(history("/disgusted"));
           }
           else {
-            history("/emraanhashmi");
+            swal({
+              title: "Your Cureent Mood is neutral",
+              text: "Good job!",
+              icon: "success",
+              button: "Ok",
+            }).then(history("/neutral"));
           }
         }
        
@@ -137,35 +175,21 @@ function App() {
   };
 
   return (
-    <div>
+    <>
+    <Left/>
+    <div className={style.faceback}>
       <div style={{ textAlign: "center", padding: "10px" }}>
         {captureVideo && modelsLoaded ? (
           <button
             onClick={closeWebcam}
-            style={{
-              cursor: "pointer",
-              backgroundColor: "green",
-              color: "white",
-              padding: "15px",
-              fontSize: "25px",
-              border: "none",
-              borderRadius: "10px",
-            }}
+            className={style.off}
           >
             Close Webcam
           </button>
         ) : (
           <button
             onClick={startVideo}
-            style={{
-              cursor: "pointer",
-              backgroundColor: "green",
-              color: "white",
-              padding: "15px",
-              fontSize: "25px",
-              border: "none",
-              borderRadius: "10px",
-            }}
+            className={style.on}
           >
             Open Webcam
           </button>
@@ -198,6 +222,7 @@ function App() {
         <></>
       )}
     </div>
+    </>
   );
 }
 
