@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Player from "../components/Player";
+import Player from "./Player";
 import React from "react";
 import style from "../css/trending.module.css";
 
-function Imran() {
+function EmraanHashmi() {
   const [songs] = useState([
     {
         title: "Dil Ibaadat",
@@ -56,4 +56,4 @@ function Imran() {
   );
 }
 
-export default Imran;
+export default EmraanHashmi;

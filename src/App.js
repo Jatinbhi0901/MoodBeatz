@@ -12,7 +12,7 @@ import Global from "./components/Global";
 import Hindi from "./components/Hindi";
 import Punjabi from "./components/Punjabi";
 import Rap91 from "./components/Rap91";
-import Imran from "./components/Imran";
+import EmraanHashmi from "./components/EmraanHashmi";
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
           <Route path="/hindi" element={<Hindi />} />
           <Route path="/punjabi" element={<Punjabi />} />
           <Route path="/rap91" element={<Rap91 />} />
-          <Route path="/imran" element={<Imran />} />
+          <Route path="/emraanhashmi" element={<EmraanHashmi />} />
           
         </Routes>
       </BrowserRouter>

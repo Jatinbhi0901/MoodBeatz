@@ -9,50 +9,41 @@ import Left from "./Left";
 const SpeechToText = () => {
   const commands = [
     {
-      command: 'reset',
-      callback: ({ resetTranscript }) => resetTranscript()
+      command: "reset",
+      callback: ({ resetTranscript }) => resetTranscript(),
     },
     {
-      command: 'open *',
+      command: "open *",
       callback: (site) => {
-        window.open("http://" + site)
-      }
+        window.open("http://" + site);
+      },
     },
-{
-  command: ['play *','punjabi', 'trending', 'hindi', 'rap'],
-      
-      callback: (command) => {
-        if(JSON.stringify(command).includes('punjabi')){
-          window.open('http://localhost:3000/punjabi',"_self")
-        }
-        else if(JSON.stringify(command).includes('trending')){
-          window.open('http://localhost:3000/trending',"_self")
-        }
-        else if(JSON.stringify(command).includes('hindi')){
-          window.open('http://localhost:3000/hindi',"_self")
-        }
-        else if(JSON.stringify(command).includes('rap')){
-          window.open('http://localhost:3000/rap',"_self")
-        }
-        else{
-          alert("No track found")
-        }
-      }
-       ,
-        isFuzzyMatch: true,
-      fuzzyMatchingThreshold: 0.2,
-      bestMatchOnly: true
-}
+    {
+      command: ["play *", "punjabi", "trending", "hindi", "rap","emraanhashmi"],
 
-    // {
-    //   command: 'play *',
-    //   callback: (musicPlayer) => {
-      // window.open('http://localhost:3000/'+command,"_self")
-    //     window.open("http://localhost:3000/"+musicPlayer.split(" ").join(""),"_self")
-    //   }
-    // }
+      callback: (command) => {
+        if (JSON.stringify(command).includes("punjabi")) {
+          window.open("http://localhost:3000/punjabi", "_self");
+        } else if (JSON.stringify(command).includes("trending")) {
+          window.open("http://localhost:3000/trending", "_self");
+        } else if (JSON.stringify(command).includes("hindi")) {
+          window.open("http://localhost:3000/hindi", "_self");
+        } else if (JSON.stringify(command).includes("rap")) {
+          window.open("http://localhost:3000/rap", "_self");
+        } else if (JSON.stringify(command).includes("emraanhashmi")) {
+          window.open("http://localhost:3000/emraanhashmi", "_self")
+        } else {
+          alert("No track found");
+        }
+      },
+      isFuzzyMatch: true,
+      fuzzyMatchingThreshold: 0.2,
+      bestMatchOnly: true,
+    },
   ];
-  const { transcript, listening, resetTranscript } = useSpeechRecognition({commands});
+  const { transcript, listening, resetTranscript } = useSpeechRecognition({
+    commands,
+  });
 
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
     return null;
@@ -60,8 +51,8 @@ const SpeechToText = () => {
 
   return (
     <>
-    <Left/>
-      
+      <Left />
+
       <section className={style.sec2}>
         <h1>Speak : play 'music name/album name'</h1>
         <div className={style.loader}>
