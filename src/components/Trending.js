@@ -18,10 +18,16 @@ function Trending() {
       src: "./music/Ishq Wala Love (Student Of The Year).mp3",
     },
     {
-      title: "Ae Dil Hai Mushkil",
-      artist: "Arijit Singh",
-      img_src: "./images/aedilhaimushkil.jfif",
-      src: "./music/Ae_Dil_Hai_Mushkil_Title_Song_320_Kbps.mp3",
+      title: "One Kiss",
+      artist: "	Calvin Harris & Dua Lipa",
+      img_src: "./images/one kiss.jpg",
+      src: "./music/One-Kiss(PagalWorld).mp3",
+    },
+    {
+      title: "Maan Meri Jaan",
+      artist: "King",
+      img_src: "./images/man meri jan.jfif",
+      src: "./music/Maan Meri Jaan(PagalWorld.com.se).mp3",
     },
     {
       title: "Raanjhanaa",

@@ -12,6 +12,19 @@ function Global() {
       src: "./music/Heat-Waves(PagalWorld).mp3",
     },
     {
+      title: "Dandelions",
+      artist: "Ruth B",
+      img_src: "./images/dandelian.jfif",
+      src: "./music/Dandelions(PagalWorld).mp3",
+
+    },
+    {
+      title: "Snap",
+      artist: "Rosa Linn",
+      img_src: "./images/snap.jfif",
+      src: "./music/Snap-(Slowed-and-Reverb)(PagalWorldl).mp3",
+    },
+    {
       title: "Stay",
       artist: "Justin Bieber",
       img_src: "./images/stay.jfif",
