@@ -42,7 +42,7 @@ function Left() {
             </Link>
             <br></br>
 
-            <Link to="" className={style.iconimg}>
+            <Link to="/facerec" className={style.iconimg}>
               <img
                 src="https://img.icons8.com/ios-filled/50/null/compact-camera.png"
                 width="25px"

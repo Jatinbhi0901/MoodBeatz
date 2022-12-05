@@ -13,6 +13,7 @@ import Hindi from "./components/Hindi";
 import Punjabi from "./components/Punjabi";
 import Rap91 from "./components/Rap91";
 import EmraanHashmi from "./components/EmraanHashmi";
+import Face from "./components/Face";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/punjabi" element={<Punjabi />} />
           <Route path="/rap91" element={<Rap91 />} />
           <Route path="/emraanhashmi" element={<EmraanHashmi />} />
+          <Route path="/facerec" element={<Face />} />
           
         </Routes>
       </BrowserRouter>
