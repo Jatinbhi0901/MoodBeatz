@@ -3,7 +3,7 @@
     height: 42.4rem;
     float: right;
     padding-top: 3rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-top: -38rem;
 }
 .off{
@@ -23,4 +23,8 @@
               font-size: 25px;
               border: none;
               border-Radius: 10px;
+}
+.cam{
+    border-radius: 20px;
+    border: 2px solid black;
 }

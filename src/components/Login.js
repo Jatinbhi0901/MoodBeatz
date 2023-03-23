@@ -13,6 +13,12 @@ function Login() {
   function go() {
     history("/registration");
   }
+
+  const history2 = useNavigate();
+
+  function match() {
+    history2("/homepage");
+  }
   async function CreateUser(event) {
     event.preventDefault();
     let formData = {
@@ -27,7 +33,7 @@ function Login() {
         text: "Good job!",
         icon: "success",
         button: "Ok",
-      });
+      }).then(match);
       console.log(formData);
     } else {
       swal({

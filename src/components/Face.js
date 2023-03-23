@@ -8,6 +8,42 @@ import style from "../css/face.module.css"
 function App() {
   const history = useNavigate();
 
+  const history1 = useNavigate();
+  const history2 = useNavigate();
+  const history3= useNavigate();
+  const history4= useNavigate();
+  const history5 = useNavigate();
+  const history6 = useNavigate();
+  const history7 = useNavigate();
+
+  function happy() {
+    history1("/happy")
+  }
+
+  function surprised() {
+    history2("/surprised")
+  }
+
+  function angry() {
+    history3("/angry")
+  }
+
+  function sad() {
+    history4("/sad")
+  }
+
+  function fearful() {
+    history5("/fearful")
+  }
+
+  function disgusted() {
+    history6("/disgusted")
+  }
+
+  function neutral() {
+    history7("/neutral")
+  }
+
   const [modelsLoaded, setModelsLoaded] = React.useState(false);
   const [captureVideo, setCaptureVideo] = React.useState(false);
 
@@ -110,7 +146,7 @@ function App() {
             text: "Good job!",
             icon: "success",
             button: "Ok",
-          }).then(history("/happy"));
+          }).then(happy);
         }
         else if (maxKey === "surprised") {
           swal({
@@ -118,7 +154,7 @@ function App() {
             text: "Good job!",
             icon: "success",
             button: "Ok",
-          }).then(history("/surprised"));
+          }).then(surprised);
         }
         else if (maxKey === "angry") {
           swal({
@@ -126,7 +162,7 @@ function App() {
             text: "Good job!",
             icon: "success",
             button: "Ok",
-          }).then(history("/angry"));
+          }).then(angry);
           }
          
           else if (maxKey === "sad") {
@@ -135,7 +171,7 @@ function App() {
               text: "Good job!",
               icon: "success",
               button: "Ok",
-            }).then(history("/sad"));
+            }).then(sad);
           }
           else if (maxKey === "fearful") {
             swal({
@@ -143,7 +179,7 @@ function App() {
               text: "Good job!",
               icon: "success",
               button: "Ok",
-            }).then(history("/fearful"));
+            }).then(fearful);
           }
           else if (maxKey === "disgusted") {
             swal({
@@ -151,7 +187,7 @@ function App() {
               text: "Good job!",
               icon: "success",
               button: "Ok",
-            }).then(history("/disgusted"));
+            }).then(disgusted);
           }
           else {
             swal({
@@ -159,7 +195,7 @@ function App() {
               text: "Good job!",
               icon: "success",
               button: "Ok",
-            }).then(history("/neutral"));
+            }).then(neutral);
           }
         }
        
@@ -210,7 +246,8 @@ function App() {
                 height={videoHeight}
                 width={videoWidth}
                 onPlay={handleVideoOnPlay}
-                style={{ borderRadius: "10px" }}
+                className={style.cam}
+                // style={{ borderRadius: "10px" }}
               />
               <canvas ref={canvasRef} style={{ position: "absolute" }} />
             </div>
