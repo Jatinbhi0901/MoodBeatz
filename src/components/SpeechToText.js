@@ -19,7 +19,7 @@ const SpeechToText = () => {
       },
     },
     {
-      command: ["play *", "punjabi", "trending", "hindi", "rap","emraanhashmi"],
+      command: ["play *", "global","punjabi", "trending", "hindi", "rap","emraanhashmi"],
 
       callback: (command) => {
         if (JSON.stringify(command).includes("punjabi")) {
@@ -28,6 +28,8 @@ const SpeechToText = () => {
           window.open("http://localhost:3000/trending", "_self");
         } else if (JSON.stringify(command).includes("hindi")) {
           window.open("http://localhost:3000/hindi", "_self");
+        }  else if (JSON.stringify(command).includes("global")) {
+            window.open("http://localhost:3000/global", "_self");
         } else if (JSON.stringify(command).includes("rap")) {
           window.open("http://localhost:3000/rap", "_self");
         } else if (JSON.stringify(command).includes("emraanhashmi")) {

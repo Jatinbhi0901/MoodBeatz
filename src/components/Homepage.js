@@ -99,7 +99,7 @@ function Homepage() {
             height="230px"
           />
           <h2 className={style.headingp}>PLAYLIST</h2>
-          <p className={style.para0}>Trending Playlist 2022</p>
+          <p className={style.para0}>Trending Playlist 2023</p>
           <p className={style.headingpx}>
             Perfect playlist for trending songs. Listen Now!
           </p>
